@@ -1,0 +1,57 @@
+{
+    "type": "extension",
+    "id": "com.mindscapesolutions.one-to-many-advanced-field-type",
+    "version": "1.0",
+    "revision": 1,
+    "compatibility": "4.2+",
+    "title": "One To Many Advanced Field Type",
+    "description": "A field type that extends that built-in one-to-many field type by giving the user an additional field to choose for display to the admins in the dropdowns. For example, if you have a one-to-many field type set up for a persons table, the built-in field type only allows you to select, say, the last name column. This field type allows you to select an additional column, so you could also add the first name column. Then your dropdowns displayed to the admins would show Smith, John instead of just Smith.",
+    "keywords": [
+        "one-to-many field"
+    ],
+    "author": {
+        "name": "MINDSCAPE Solutions",
+        "url": "http://mindscapesolutions.com",
+        "email": "programmers@mindscapesolutions.com"
+    },
+    "licenses": {
+        "MIT": "http://opensource.org/licenses/MIT"
+    },
+    "components": {
+        "module_groups": [
+
+        ],
+        "modules": [
+
+        ],
+        "templates": [
+
+        ],
+        "callouts": [
+
+        ],
+        "settings": [
+
+        ],
+        "feeds": [
+
+        ],
+        "field_types": [
+            {
+                "id": "com.mindscapesolutions.one-to-many-advanced-field-type*one-to-many-advanced",
+                "name": "One to Many Advanced",
+                "use_cases": {
+                    "templates": "on",
+                    "modules": "on",
+                    "callouts": "on",
+                    "settings": "on"
+                },
+                "self_draw": null,
+                "extension": "com.mindscapesolutions.one-to-many-advanced-field-type"
+            }
+        ],
+        "tables": [
+
+        ]
+    }
+}
