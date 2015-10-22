@@ -36,6 +36,11 @@
 	</span>
 </fieldset>
 <fieldset>
+    <label>"Add Item" Button Label</label>
+    <input type="text" name="add_item_button_label" value="<?= $data['add_item_button_label'] ?>" />
+    <p class="note">This label overrides the default "Add Item".</p>
+</fieldset>
+<fieldset>
 	<label>List Parser Function</label>
 	<input type="text" name="parser" value="<?=htmlspecialchars($data["parser"])?>" />
 	<p class="note">The first parameter passed in is an array of data. The second is a boolean of whether you're receiving currently tagged entries (false) or the list of available entries that aren't currently tagged (true).</p>

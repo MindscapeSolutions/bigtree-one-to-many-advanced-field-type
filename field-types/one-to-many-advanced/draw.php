@@ -88,7 +88,7 @@
 			<option value="<?=BigTree::safeEncode($id)?>"><?=BigTree::safeEncode(BigTree::trimLength(strip_tags($title),100))?></option>
 			<? } ?>
 		</select>
-		<a href="#" class="add button"><span class="icon_small icon_small_add"></span>Add Item</a>
+        <a href="#" class="add button"><span class="icon_small icon_small_add"></span><? if (!empty($field['options']['add_item_button_label'])) { echo $field['options']['add_item_button_label']; } else { echo 'Add Item'; } ?></a>
 		<?
 			if ($field["options"]["show_add_all"]) {
 		?>
